@@ -1,0 +1,98 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.form-main {
+  width: 100%;
+  margin: 60px auto;
+}
+
+.form-main_container {
+  text-align: center;
+  margin: 0 30px;
+}
+
+.success-msg {
+  display: block;
+  height: 30px;
+  font-size: 20px;
+}
+
+.error-msg {
+  display: block;
+  height: 30px;
+  font-size: 20px;
+}
+
+.form-main_title {
+  display: block;
+  margin: 24px auto;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.form-main_turkish {
+  height: 16px;
+}
+
+.form-main_phone {
+  display: flex;
+  align-items: center;
+}
+
+.iti--allow-dropdown {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+
+.form-main_input {
+  width: 100%;
+  padding: 8px;
+  height: 56px;
+
+  font-family: NotoSans-Regular,sans-serif;
+  font-size: 19px;
+  line-height: 32px;
+  color: #2a2a2a;
+  border: 1px solid #ced4da;
+
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.form-main_prefix {
+  font-family: NotoSans-Regular,sans-serif;
+  font-size: 19px;
+  line-height: 32px;
+  margin-bottom: 16px;
+  height: 56px;
+  width: 120px;
+  padding: 11px 5px;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.form-main_input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #b92e32;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(256,0,0,.25);
+}
+
+.form-main_btn {
+  display: block;
+  background-color: #b92e32;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+
+  font-size: 22px;
+  padding: 15px 50px !important;
+}

@@ -1,0 +1,129 @@
+.popup-menu[popup-id="1"] {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.473);
+}
+
+.popup-menu[popup-id="1"].active {
+  display: block;
+}
+
+.popup-menu[popup-id="1"] .popup-menu__container {
+  max-width: 360px;
+
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  border-radius: 10px 30px 30px 30px;
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.60);
+  background-color: #FFFFFF;
+}
+
+.popup-menu[popup-id="1"] .popup-menu__close-button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.popup-menu[popup-id="1"] .popup-menu__close-button>img {
+  width: 100%;
+}
+
+.popup-menu[popup-id="1"] .popup-menu__main-part {
+  padding: 20px;
+  text-align: center;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+.popup-menu[popup-id="2"] {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.473);
+}
+
+.popup-menu[popup-id="2"].active {
+  display: block;
+}
+
+.popup-menu[popup-id="2"] .popup-menu__container {
+  max-width: 700px;
+
+  padding: 30px 60px 60px;
+
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  border-radius: 10px 30px 30px 30px;
+  background: var(--1, linear-gradient(153deg, #380DB3 16.67%, #D597FF 100%));
+}
+
+.popup-menu[popup-id="2"] .popup-menu__close-button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.popup-menu[popup-id="2"] .popup-menu__close-button>img {
+  width: 100%;
+}
+
+.popup-menu[popup-id="2"] .popup-menu__header {
+  color: #F6F6F6;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.popup-menu[popup-id="2"] .popup-menu__main-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  margin-top: 50px;
+}
+
+.popup-menu[popup-id="2"] .popup-menu__main-part>img {
+  width: 50%;
+}
+
+@media (max-width: 700px) {
+  .popup-menu[popup-id="2"] .popup-menu__main-part {
+    margin-top: 20px;
+  }
+
+  .popup-menu[popup-id="2"] .popup-menu__main-part>img {
+    display: none;
+  }
+}

@@ -1,0 +1,159 @@
+.new-page-container {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	gap: 20px;
+}
+
+.new-page-container__left {
+	display: flex;
+	flex-direction: column;
+}
+
+.new-page-container__left-title {
+	color: #142143;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.new-page-container__left-text {
+	color: #191919;
+	font-size: 14px;
+}
+
+.answer_wrapper {
+	display: flex;
+	gap: 10px;
+}
+
+.answer_wrapper > img {
+	object-fit: contain;
+}
+
+.new-block-front {
+	display: flex;
+	/* background-color: #ffff; */
+	margin-top: 100px;
+}
+
+.new-block-front__container {
+	display: flex;
+	padding: 10px;
+	gap: 20px;
+	background-color: rgba(255, 255, 255, 0.281);
+	color: #fff;
+	border-radius: 10px;
+	/* backdrop-filter: blur(25px); */
+}
+
+.new-block-front__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.new-block-front__item__text {
+	font-size: 14px;
+	text-align: center;
+}
+
+.last-image-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.last-image-container > img {
+	width: 100%;
+	max-width: 140px;
+}
+
+.last-image-container__text {
+	font-size: 10px;
+	text-align: center;
+}
+
+.footer-text {
+	margin: 0 auto;
+	font-size: 10px;
+	color: #f7f7f7;
+}
+
+.footer-text-form {
+	color: #142143 !important;
+	position: absolute;
+	bottom: 20%;
+}
+
+@media (max-width: 899px) {
+	.new-block-front {
+		margin: 40px auto;
+	}
+
+	.footer-text {
+		color: #142143;
+	}
+
+	.final-page_horizontal {
+		/* display: flex;
+        flex-direction: column;
+        align-items: center; */
+	}
+
+	.new-page-container {
+		flex-direction: column-reverse;
+	}
+
+	.new-block-front__container {
+		display: flex;
+		padding: 10px;
+		gap: 20px;
+		background-color: rgba(20, 33, 67, 0.281);
+		color: #fff;
+		border-radius: 10px;
+		backdrop-filter: blur(25px);
+	}
+}
+
+@media (max-width: 510px) {
+	.new-block-front__container {
+		display: flex;
+		padding: 10px;
+		gap: 20px;
+		background-color: rgba(20, 33, 67, 0.281);
+		color: #000;
+	}
+
+	.footer-text-form {
+		transform: translate(-50%, -50%);
+		left: 50%;
+		bottom: 10%;
+	}
+
+	.new-page-container__left-circle {
+		min-height: 20px;
+		min-width: 20px;
+	}
+
+	.new-page-container__left-item {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		text-align: left !important;
+	}
+
+	.new-page-container__right-container > img {
+		max-height: 300px;
+		border-radius: 4px;
+	}
+
+	.baykar-img {
+		max-width: 100% !important;
+	}
+
+	.p-text {
+		text-align: center;
+	}
+}

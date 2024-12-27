@@ -1,0 +1,55 @@
+@-webkit-keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0
+    }
+    100% {
+        background-position: 468px 0
+    }
+}
+
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0
+    }
+    100% {
+        background-position: 468px 0
+    }
+}
+
+.template__blur {
+    border: 1px solid #e1e7f0;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+
+.template__blur+.template__blur {
+    margin-top: 20px
+}
+
+.template__blur-img,
+.template__blur-link,
+.template__blur-text {
+    -webkit-animation: 1s linear infinite forwards placeHolderShimmer;
+    animation: 1s linear infinite forwards placeHolderShimmer;
+    background: #5d5d5d;
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eee), color-stop(18%, #d8d8d8), color-stop(33%, #eee));
+    background: -webkit-linear-gradient(left, #eee 8%, #d8d8d8 18%, #eee 33%);
+    background: -o-linear-gradient(left, #eee 8%, #d8d8d8 18%, #eee 33%);
+    background: linear-gradient(to right, #eee 8%, #d8d8d8 18%, #eee 33%)
+}
+
+.template__blur-img {
+    height: 180px;
+    width: 100%
+}
+
+.template__blur-text {
+    margin: 14px 0;
+    height: 40px;
+    width: 100%
+}
+
+.template__blur-link {
+    margin-top: 8px;
+    height: 18px
+}

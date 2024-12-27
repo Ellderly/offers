@@ -1,0 +1,369 @@
+<html>
+	<head>
+		<title>Yatırıma Başlamak için Hesap Açın - Meksa Yatırım</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+		<link
+			href="css/bootstrap.min.css"
+			rel="stylesheet"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<header id="navbar" class="navbar navbar-expand-lg bg-white sticky-top">
+			<nav class="container navbar-container" aria-label="Ana menü">
+				<a
+					class="navbar-brand"
+					href="#meksa-hesap-ac"
+					aria-label="Meksa Yatırım"
+					aria-current="page"
+				>
+					<img src="images/logo.svg" width="110" height="68" />
+				</a>
+				<a
+					class="text-decoration-none mainButton btn-navbar"
+					href="#meksa-hesap-ac"
+				>
+					Giriş Yap
+				</a>
+			</nav>
+		</header>
+		<section class="homepage-section-1">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-12 col-md-6 col-lg-5">
+						<h1 class="mb-3">Yatırım İşlemlerine Bugün Başlayın!</h1>
+						<p class="desc mb-3 mb-lg-4">
+							170’ten Fazla Yatırım Aracına Tek Platformdan Erişin, Dilediğiniz
+							Yerden İşlem Yapın.
+						</p>
+						<img
+							src="images/yatirimForm.png"
+							class="d-none d-md-block img-fluid"
+						/>
+					</div>
+					<div class="col-12 col-md-6">
+						<form class="mb-0 h-100" method="POST" id="meksa-hesap-ac">
+							<h5 class="text-center text-md-start mb-3 mainColor">
+								Yatırıma Başlamak için Hesap Açın
+							</h5>
+							<div class="row">
+								<div class="col-6 mb-3">
+									<label for="name" class="form-label mb-0">Ad</label>
+									<input
+										type="text"
+										name="name"
+										class="form-control bg-white border-0"
+										id="name"
+										placeholder="Adınızı giriniz."
+										required=""
+									/>
+								</div>
+								<div class="col-6 mb-3">
+									<label for="surname" class="form-label mb-0">Soyad</label>
+									<input
+										type="text"
+										name="surname"
+										class="form-control bg-white border-0"
+										id="surname"
+										placeholder="Soyadınızı giriniz."
+										required=""
+									/>
+								</div>
+								<div class="col-12 mb-3">
+									<label for="email" class="form-label mb-0">E-Posta</label>
+									<input
+										type="email"
+										name="email"
+										class="form-control bg-white border-0"
+										id="email"
+										placeholder="E-Posta adresinizi giriniz."
+										required=""
+									/>
+								</div>
+								<div class="col-12 mb-3">
+									<label for="phone" class="form-label mb-0">Telefon</label>
+									<input
+										type="tel"
+										name="phone"
+										class="form-control bg-white border-0"
+										id="phone"
+										placeholder="Telefon numaranızı giriniz."
+										required=""
+									/>
+								</div>
+								<div class="hidden-inputs">
+									<input
+										type="hidden"
+										name="utm_source"
+										id="utm_source"
+										value=""
+									/>
+									<input
+										type="hidden"
+										name="utm_medium"
+										id="utm_medium"
+										value=""
+									/>
+									<input
+										type="hidden"
+										name="utm_campaign"
+										id="utm_campaign"
+										value=""
+									/>
+									<input type="hidden" name="gclid" id="gclid" value="" />
+								</div>
+								<!-- <label class="form-label">
+                                    Yatırım Piyasası Tercihiniz
+                                </label>
+                                <div class="col-6 mb-2 d-lg-flex align-items-center">
+                                    <input name="hisse-senedi" class="form-check-input mt-lg-0 me-1" type="checkbox" value="" id="stock">
+                                    <label class="form-check-label mainColor" for="stock">
+                                        Hisse Senedi
+                                    </label>
+                                </div>
+                                <div class="col-6 mb-2 d-lg-flex align-items-center">
+                                    <input name="viop" class="form-check-input mt-lg-0 me-1" type="checkbox" value="" id="VİOP">
+                                    <label class="form-check-label mainColor" for="VİOP">
+                                        VİOP
+                                    </label>
+                                </div>
+                                <div class="col-6 mb-4 d-lg-flex align-items-center">
+                                    <input name="forex" class="form-check-input mt-lg-0 me-1" type="checkbox" value="" id="forex">
+                                    <label class="form-check-label mainColor" for="forex">
+                                        Forex
+                                    </label>
+                                </div>
+                                <div class="col-6 mb-4 d-lg-flex align-items-center">
+                                    <input name="yurt-disi-piyasalar" class="form-check-input mt-lg-0 me-1" type="checkbox" value="" id="markets">
+                                    <label class="form-check-label mainColor" for="markets">
+                                        Yurt Dışı Piyasalar
+                                    </label>
+                                </div> -->
+								<div class="col-12 mb-2">
+									<label for="yatirim-tercihi"
+										>Yatırım Piyasası Tercihiniz</label
+									>
+									<select
+										name="yatirim-tercihi"
+										id="yatirim-tercihi"
+										class="form-control bg-white border-0"
+									>
+										<option value="forex">FOREX</option>
+										<option value="hisse">HİSSE</option>
+										<option value="viop">VİOP</option>
+										<option value="yurt-disi-piyasalar">
+											YURT DIŞI PİYASALAR
+										</option>
+										<option value="yatirim-fonlari">YATIRIM FONLARI</option>
+									</select>
+								</div>
+
+								<div class="col-12 mb-2 d-lg-flex align-items-center">
+									<input
+										class="form-check-input mt-lg-0 me-1"
+										type="checkbox"
+										value=""
+										id="aydinlatmaMetni"
+										required=""
+									/>
+									<label
+										class="form-check-label d-inline"
+										for="aydinlatmaMetni"
+									>
+										<a class="mainColor" href="#meksa-hesap-ac"
+											>Aydınlatma Metni’ni okudum</a
+										>, kabul ediyorum.
+									</label>
+								</div>
+								<div class="col-12 mb-4 d-lg-flex align-items-center">
+									<input
+										class="form-check-input mt-lg-0 me-1"
+										type="checkbox"
+										value=""
+										id="kvkk"
+										required=""
+									/>
+									<label class="form-check-label d-inline" for="kvkk">
+										Kişisel verilerimin işlenmesine
+										<a class="mainColor" href="#meksa-hesap-ac"
+											>açık rıza veriyorum</a
+										>.
+									</label>
+								</div>
+								<div class="col-12 mb-3">
+									<div
+										class="g-recaptcha"
+										data-sitekey="6LdMiekeAAAAAPoLyZDJ8vHjVIxybdlC9_kE_R68"
+									></div>
+								</div>
+								<div class="col-12 text-center">
+									<button class="mainButton" type="submit" id="submit-btn">
+										Ücretsiz Başvuru Yap
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="homepage-section-2">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-12 col-xl-4 mb-4">
+						<h3 class="text-center text-md-start mainColor mb-3">
+							Neden Meksa Yatırım?
+						</h3>
+						<p class="text-center text-md-start desc">
+							Borsa İstanbul'da <span class="mainColor">33 yılın</span> verdiği
+							tecrübe ve bilgi birikimiyle yatırımcılarımıza
+							<span class="mainColor">güven ve istikrarlı</span> hizmet
+							sunuyoruz.
+						</p>
+					</div>
+					<div class="col-12 col-xl-7">
+						<div class="row g-5">
+							<div class="col-12 col-md-4 card-item text-center text-md-start">
+								<img class="mb-3" src="images/portfoy-logo.svg" alt="" />
+								<p class="title mb-3">Meksa Yurt Dışı Piyasalar</p>
+								<p class="desc">
+									Firmamız konularında uzman personeli ile yatırımcıların risk
+									tercihleri doğrultusunda amaçladıkları getiriye ulaştırmayı
+									hedeflemektedir.
+								</p>
+							</div>
+							<div class="col-12 col-md-4 card-item text-center text-md-start">
+								<img class="mb-3" src="images/viop-logo.svg" alt="" />
+								<p class="title mb-3">Meksa VİOP</p>
+								<p class="desc">
+									33 yıllık Meksa Yatırım tecrübesini teknolojiye uyumlu hale
+									getirip, kişiye özel hizmet veren Türkiye 'nin en tecrübeli,
+									en geniş, en dinamik VİOP departmanının sayfası.
+								</p>
+							</div>
+							<div class="col-12 col-md-4 card-item text-center text-md-start">
+								<img class="mb-3" src="images/fx-logo.svg" alt="" />
+								<p class="title mb-3">MeksaFX</p>
+								<p class="desc">
+									33 yıllık Meksa Tecrübesi ile Dünyanın en büyük finans
+									piyasası olan FOREX e MeksaFX avantajları ve Fırsatları ile
+									adım atın.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="homepage-section-3">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-12 col-md-6 col-lg-5 text-center text-md-start mb-5">
+						<img
+							class="img-fluid"
+							src="images/yatirimAyriciliklari.png"
+							alt=""
+						/>
+					</div>
+					<div class="col-12 col-md-6 col-xxl-7">
+						<h4 class="mainColor text-center text-md-start mb-3">
+							Meksa Yatırım Ayrıcalıkları
+						</h4>
+						<p class="desc text-center text-md-start mb-3">
+							Birden fazla işlem platformu ile vakit kaybetmeden tek platform
+							üzerinden yatırım yapın!
+						</p>
+						<div class="row">
+							<div class="col-12 col-xxl-6">
+								<p class="list-item position-relative mb-0">
+									Kolay Erişim ve İşlem Yapma
+								</p>
+								<p class="list-item position-relative mb-0">Ürün Çeşitliliği</p>
+								<p class="list-item position-relative mb-0">
+									Geniş Ürün Yelpazesi
+								</p>
+								<p class="list-item position-relative mb-0">
+									Yurt Dışı Piyasalarda İşlem Kolaylığı
+								</p>
+							</div>
+							<div class="col-12 col-xxl-6">
+								<p class="list-item position-relative mb-0">
+									Mobil ve Web İşlem Platformaları
+								</p>
+								<p class="list-item position-relative mb-0">
+									Görüntülü Hesap Açma
+								</p>
+								<p class="list-item position-relative mb-0">
+									Hızlı Para Çekme/Yatırma
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="homepage-section-4">
+			<div class="container">
+				<div class="row justify-content-center">
+					<h3 class="mainColor text-center mb-3">
+						Günlük Bültenlerimiz ile Piyasayı Takip Edin
+					</h3>
+					<p class="desc text-center mb-4">
+						Meksa Yatırım uzman araştırma kadromuzun yatırım piyasalarındaki
+						gelişmeleri teknik ve temel analizler eşliğinde yazdığı araştırma
+						bölümümüzde; BIST100, VİOP, Forex ve Yurtdışı Piyasalar Bültenlerini
+						inceleyebilirsiniz.
+					</p>
+
+					<div class="col-lg-11 mx-auto">
+						<div class="row text-center">
+							<div class="col-6 col-md-3 mb-3">
+								<a href="#meksa-hesap-ac" class="card-hover d-inline-block">
+									<img class="img-fluid" src="images/item-1.png" alt="" />
+								</a>
+							</div>
+							<div class="col-6 col-md-3 mb-3">
+								<a href="#meksa-hesap-ac" class="card-hover d-inline-block">
+									<img class="img-fluid" src="images/item-2.png" alt="" />
+								</a>
+							</div>
+							<div class="col-6 col-md-3 mb-4">
+								<a href="#meksa-hesap-ac" class="card-hover d-inline-block">
+									<img class="img-fluid" src="images/item-3.png" alt="" />
+								</a>
+							</div>
+							<div class="col-6 col-md-3 mb-4">
+								<a href="#meksa-hesap-ac" class="card-hover d-inline-block">
+									<img class="img-fluid" src="images/item-4.png" alt="" />
+								</a>
+							</div>
+							<div class="text-center mt-4">
+								<a
+									class="text-decoration-none mainButton"
+									href="#meksa-hesap-ac"
+								>
+									Bültenleri İncele
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p class="text-center mb-0">Meksa Yatırım Menkul Değerler A.Ş.</p>
+		</footer>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
