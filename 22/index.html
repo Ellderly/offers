@@ -1,0 +1,293 @@
+<!DOCTYPE html><html lang="en" ><head><base>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="intlTelInput.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <link href="css2.css" rel="stylesheet">
+    <title>WhatsApp-Bot</title>
+    <link rel="stylesheet" href="animate.min.css">
+
+    <script src="jquery.min.js"></script>
+    <script src="intlTelInput.js"></script>
+    <script src="jquery.mask.js"></script>
+</head>
+<body>
+    <div class="dialog_wrapper">
+      <div class="sidebar">
+        <h1>Чаты</h1>
+        <div class="correspondence_wrapper">
+          <div class="correspondence_block">
+            <div class="center">
+              <img src="chatbot.png">
+            </div>
+          </div>
+          <div class="correspondence_block">
+            <h2>WhatsApp-Bot</h2>
+            <h4 id="newmessage"></h4>
+            <h5 id="messagedata"></h5>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+          <header>
+              <div class="botavatar_wrapper">
+                  <div class="avatar">
+                      <img src="chatbot.png">
+                  </div>
+                  <div class="username_wrapper">
+                      <div class="center">
+                          <div class="user_info">
+                              <h3>WhatsApp-Bot</h3>
+                              <p>Online</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="menu">
+                      <button>
+                          <div class="center">
+                              <img src="menu.png">    
+                          </div>
+                      </button>
+                  </div>
+              </div>
+          </header>
+          <main id="dialog">
+              <h4 class="today">Сегодня</h4>
+              <form action="send.php" method="POST" onsubmit="return ValidateForm()" id="regform" style="display: none;" class="animate__animated animate__fadeIn" >
+                  <h1>Заполните поле ниже и начните зарабатывать</h1>
+                  <input type="hidden" name="country" value="RU">
+                  <input type="hidden" name="buyer" value="{buyer}">
+                  <input type="hidden" name="subid" value="{subid}">
+                  <input type="hidden" name="fbp" value="{fbp}">
+                  <input type="hidden" name="bgplx" value="{bgplx}">
+                  <input type="hidden" name="comment" value="">
+                          
+                  <input type="text" placeholder="Имя" name="first_name" required="" value="">
+                  <input type="text" placeholder="Фамилия" name="last_name" required="" value="">
+                  <input type="email" placeholder="Почта" name="email" required="" value="">
+                  <input inputmode="numeric" id="phone" name="phone" type="tel" required="" minlength="6" autocomplete="off" data-intl-tel-input-id="0" placeholder=""  style="padding-left: 83px;" value="">               
+                   <label id="phone-error" class="error" for="phone"></label>
+                  <input type="hidden" name="country_code" id="phone_code" value="+7">
+                    <input type="hidden" name="country" id="country" value="FR">
+                  <span id="valid-msg" class="hide">✓ Valid</span>
+                  <span id="error-msg" class="hide"></span>
+                  <ul class="dontwork">
+                      <li>Проект доступен лицам старше 21 года.</li><br>
+                      <li>* Для подтверждения регистрации ответьте на звонок эксперта.</li>
+                      <li>* Проект не сотрудничает с гражданами следующих стран: Украниа / Индия / Китай</li>
+              
+                  </ul>
+                  <button class="submitbtn" type="submit" id="btn">Регистрация</button>
+                  
+                      <input type="hidden" name="subid" value="{subid}">
+                     <input type="hidden" name="fbp" value="{fbp}">
+          
+ <input type="hidden" name="expid" value="">
+ <input type="hidden" name="campaign" value="">
+ <input type="hidden" name="referrer" value="">
+ <input type="hidden" name="source" value="">
+ <input type="hidden" name="medium" value="">
+ <input type="hidden" name="content" value="">
+ <input type="hidden" name="term" value="">
+ <input type="hidden" name="timezone" value="2">
+<input type="hidden" name="phonePrefix" value="">
+              </form>
+          
+          <!-- <footer>
+              <input type="text" name="" id="" placeholder="Введите текст">
+              <button>
+                  <div class="center">
+                      <img src="img/send.png">
+                  </div>
+              </button>
+          </footer> -->
+      </div>
+    </div>
+    <img src="back.jpg" class="background">
+    <script src="dialogs.js"></script>
+
+    <script src="jquery.validate.min.js"></script>
+    <script src="NationalDestination.js"></script>
+
+                <script src="jquery.js"></script>
+    <script src="intlTelInput.min.js"></script>
+
+<script defer="" src="inputmask.js"></script>
+<script defer="" src="jquery.inputmask.js"></script>
+
+<link rel="stylesheet" href="intlTelInput.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+
+  <script>
+      var iti;
+     $(document).ready(function () {
+  let phonePrefix = "44";
+  let countryLetterCode = "CA";
+  
+
+  $.ajax({
+    url: "geo.php",
+    dataType: "json",
+    success: function (result) {
+      $('input[name="phone"]').each(function (input) {
+         iti = window.intlTelInput(this, {
+          ...result.data,
+          customContainer: "phoneWrapper",
+          autoPlaceholder: "aggressive",
+          separateDialCode: "true",
+                 customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+             console.log(selectedCountryPlaceholder);
+             if(selectedCountryPlaceholder === '48 123 456'){
+               return '481 234 567';
+             }
+           return selectedCountryPlaceholder;
+  },
+          utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js",
+        });
+          [...document.querySelectorAll('[name=country]')].forEach(el=>{
+            el.value = result.data.initialCountry.toUpperCase();
+          });
+        phonePrefix = iti.getSelectedCountryData().dialCode;
+       countryLetterCode =  iti.getSelectedCountryData().iso2.toUpperCase();
+        [...document.querySelectorAll('[name=phonePrefix]')].forEach(el=>{
+            el.value = phonePrefix;
+          });
+            [...document.querySelectorAll('[name=country]')].forEach(el=>{
+            el.value = countryLetterCode;
+          });
+        $(this).on("countrychange", function () {
+          
+          phonePrefix = iti.getSelectedCountryData().dialCode;
+           countryLetterCode =  iti.getSelectedCountryData().iso2.toUpperCase();
+          [...document.querySelectorAll('[name=phonePrefix]')].forEach(el=>{
+            el.value = phonePrefix;
+          });
+              [...document.querySelectorAll('[name=country]')].forEach(el=>{
+            el.value = countryLetterCode;
+          });
+        });
+        
+        $(input).on('keyup',function () {
+          
+        });
+         jQuery.validator.addMethod('validatePhone', function() {
+        if (iti.isValidNumber()) {
+          
+            return true;
+        } else {
+          const country = iti.getSelectedCountryData().iso2;
+          if(country === 'bg'){
+            const phone = iti.getNumber();
+            if(phone.length===13){
+              return true;
+            }
+          }
+            return false;
+        }
+    }, "Number not valid");
+    
+   
+    
+     
+       $("input[name='phone']").on("input", function () {
+        const value = $(this).val();
+        const placeholder = $(this).attr('placeholder'); // Get the placeholder format
+
+        if (value === "") {
+          $(this).trigger("unmask"); 
+
+        } else {
+            const mask = createMask(placeholder); // Create mask based on the placeholder
+            $(this).inputmask({ mask: mask, showMaskOnHover: false, showMaskOnFocus: false }); // Apply the mask
+        }
+    });
+
+    // Function to create a mask from the placeholder format
+    function createMask(placeholder) {
+        // Replace digits with '9' and spaces with '-'
+        return placeholder.replace(/\d/g, '9').replace(/\s/g, '-');
+    }
+
+    $("form").validate({
+        rules: {
+            phone: {
+                required: true,
+                validatePhone: true
+            },
+            email:{
+              required: true,
+              
+            },
+               name:{
+              required: true,
+              
+            }
+        },
+      messages: {
+      
+        name: {
+            required: "Введите имя и фамилию",
+        },
+        email:{
+          required:'Введите email',
+          email:'Введите e-mail в формате - email@gmail.com'
+        },
+        phone:{
+          required: 'Введите телефон',
+          validatePhone: 'Введен некорректный номер телефона'
+          
+          
+        }
+    },
+      errorPlacement: function (error, element) {
+            error.insertAfter(element);
+      },
+    });
+        
+      
+      
+        $("input").on("input", function () {
+        if ($(this).val() === "0") {
+          console.log('value - 0');
+            if (iti) {
+                iti.setNumber(""); // Reset the intl-tel-input field
+            }
+        }
+    });
+        
+        
+        
+        return iti;
+        
+        
+      });
+    },
+  });
+     });
+    </script> 
+    <style>
+      input.error {
+    border: 1px solid red;
+    
+}
+
+/* Optional: Style the error messages */
+label.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom:10px;
+    display: block;
+    
+}
+    </style>
+
+
+</body></html>
+
+
+
+
