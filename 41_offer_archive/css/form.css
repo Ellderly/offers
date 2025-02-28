@@ -1,0 +1,161 @@
+/* Start Form */
+
+.register-form {
+	padding: 30px 20px 30px;
+	max-width: 350px;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 10px auto 10px;
+	background: #3e4246;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 10px;
+}
+
+.form-input-main {
+	margin-bottom: 10px;
+}
+
+.form-input-main input,
+.form-input-main select {
+	font-family: 'Inter', sans-serif;
+	height: 44px;
+	width: 100%;
+	padding-left: 10px;
+	background: transparent;
+	border-radius: 5px;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 18px;
+	border: 1px solid #ffffff;
+}
+
+.form-input-main select {
+	margin: 0;
+	width: 100%;
+}
+
+.form-input-main input::placeholder,
+.form-input-main select::placeholder {
+	color: rgba(255, 255, 255);
+}
+
+button[name='submitBtn'] {
+	width: 100%;
+	max-width: 240px;
+	background: #ffffff;
+	border-radius: 71px;
+	height: 50px;
+	text-align: center;
+	color: #ffffff;
+	font-family: 'IBM Plex Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 100%;
+	color: #0c1570;
+	border: none;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-header-text,
+.form-footer-text {
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+}
+
+.form-header-text {
+	margin-bottom: 20px;
+}
+
+.form-footer-text {
+	margin-top: 20px;
+}
+
+.form-input-main label[for='nationality'] {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+	color: #fff;
+}
+
+.form-input-main label[for='policy'],
+.form-input-main label[for='policy2'] {
+	display: flex;
+	align-items: flex-start;
+	gap: 5px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.form-input-main label[for='age'],
+.form-input-main label[for='age2'] {
+	font-size: 14px;
+	display: flex;
+	gap: 10px;
+	flex-direction: column-reverse;
+	align-items: flex-start;
+	color: #fff;
+}
+
+.form-input-main input[name='policy'],
+.form-input-main input[name='policy2'] {
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type='tel'],
+.iti--allow-dropdown input[type='text'],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type='tel'],
+.iti--separate-dial-code input[type='text'] {
+	width: 100%;
+	padding-left: 104px !important;
+}
+
+.iti__selected-dial-code,
+.iti__arrow {
+	color: #fff !important;
+	border-top-color: #fff !important;
+}
+
+.iti {
+	width: 100% !important;
+}
+
+.iti__country {
+	color: #000 !important;
+}
+
+.form-input option {
+	color: #000 !important;
+}
+
+/* Hide arrows */
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+@media screen and (max-width: 768px) {
+	button[name='submitBtn'] {
+		width: 100%;
+	}
+}
+
+/* End Form */

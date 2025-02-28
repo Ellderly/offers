@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta name="facebook-domain-verification" content="" />
+
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>
+			Инвестируйте в золото и драгоценные металлы – ваш путь к финансовой
+			независимости и обеспеченному будущему!
+		</title>
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="shortcut icon" type="image/ico" href="" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/form.css" />
+
+		<link rel="stylesheet" href="./form/css/form.css" />
+
+		<style>
+			#reg_form {
+				position: relative;
+			}
+
+			.reg-form__preloader {
+				position: absolute;
+				z-index: 100;
+				inset: 0px;
+				width: 100%;
+				height: 100%;
+				background-color: rgb(255, 255, 255);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.reg-form__preloader-img {
+				width: 100%;
+				height: auto;
+				object-fit: contain;
+				max-width: 50px;
+			}
+
+			.reg-form__preloader.hidden {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="container">
+					<div
+						class="header__img"
+						style="display: flex; justify-content: center"
+					>
+						<img
+							src="images/IMG_8155.png"
+							alt="main-photo"
+							style="max-width: 300px"
+						/>
+					</div>
+
+					<div class="header__info">
+						<h2 class="header__title">
+							Инвестируйте в золото и драгоценные металлы – ваш путь к
+							финансовой независимости и обеспеченному будущему!
+						</h2>
+						<p class="header__text">
+							В последние годы инвестиции в золото стали одним из самых
+							прибыльных и надёжных способов заработка. Средний рост стоимости
+							золота за последние 20 лет составил более 300%, а инвесторы,
+							которые начали вкладываться 10 лет назад, увеличили свои капиталы
+							в 2-3 раза! Даже во времена финансовых кризисов золото продолжает
+							дорожать, а те, кто инвестирует в него, сохраняют и приумножают
+							своё состояние.
+						</p>
+						<!-- <div class="header__links">
+							<a class="header__link white" href="#main-form">Приступить</a>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<main class="main">
+				<section class="video" id="video">
+					<div class="container">
+						<div class="video__inner">
+							<div class="video__info">
+								<h4 class="video__title">
+									Преимущества инвестирования в золото и драгоценные металлы:
+								</h4>
+								<p>
+									✅ Высокий доход – в среднем золото растёт в цене на 10-15%
+									ежегодно, а в кризисные годы его стоимость может увеличиваться
+									на 30-50%. <br /><br />
+									✅ Гарантия сохранности капитала – золото никогда не
+									обесценивается и защищает от инфляции. <br /><br />
+									✅ Реальные кейсы – тысячи инвесторов уже заработали сотни
+									тысяч и даже миллионы, просто вовремя начав инвестировать.
+									<br /><br />
+									✅ Безопасность для будущего – обеспечьте финансовую
+									стабильность себе и своим детям на долгие годы вперёд.
+									<br /><br />
+									✅ Минимальные риски – в отличие от акций и криптовалют,
+									золото – это реальный актив, не подверженный резким колебаниям
+									. <br /><br />
+									✅ Лёгкость покупки и продажи – вы всегда сможете продать
+									золото в любой точке мира по рыночной цене.
+								</p>
+							</div>
+							<div class="video__video" style="text-align: center">
+								<img
+									src="images/IMG_8131.png"
+									alt="s"
+									style="max-width: 250px; width: 100%"
+								/>
+								<br /><br />
+								<img
+									src="images/IMG_8138.png"
+									alt="s"
+									style="max-width: 250px; width: 100%"
+								/>
+							</div>
+							<a class="header__link white mob" href="#main-form">
+								Приступить
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="main-form" id="main-form">
+					<div class="container">
+						<div class="main-form__inner">
+							<div class="main-form__info">
+								<h2 class="main-form__title">
+									Как начать зарабатывать на золоте?
+								</h2>
+								<p class="main-form__text">
+									Мы предлагаем простые и выгодные решения для всех, кто хочет
+									начать инвестировать: <br />
+									Физическое золото – слитки, монеты и ювелирные изделия с
+									высокой ликвидностью. <br />
+									Обезличенные металлические счета – удобный способ без
+									необходимости хранения. <br />
+									Золотые ETF и фонды – инвестируйте с минимальными затратами и
+									высокой доходностью. <br />
+									Цифровые активы на базе золота – новые возможности для
+									современных инвесторов. <br />
+								</p>
+							</div>
+							<div
+								class="main-form__form"
+								style="
+									display: flex;
+									flex-direction: column;
+									align-items: center;
+								"
+							>
+								<img
+									src="images/IMG_8143.png"
+									alt="s"
+									style="max-width: 250px; width: 100%"
+								/>
+								<br /><br />
+								<img
+									src="images/IMG_8144.png"
+									alt="s"
+									style="max-width: 250px; width: 100%"
+								/>
+							</div>
+							<!-- <div class="main-form__form">
+								<form
+									class="form _main-form register-form"
+									id="main-form"
+									method="post"
+								>
+                
+
+									<div class="form-group input-group input-group--name">
+										<input
+											class="form-control form-input input is-large"
+											name="firstname"
+											placeholder="Имя"
+											type="text"
+										/>
+										<i class="fa__err"></i>
+										<span class="fa__errInfo"
+											>- Введите в указанном формате<br />
+											- Имя и фамилия не должны совпадать</span
+										>
+										<i class="fa__checked"></i>
+									</div>
+									<div class="form-group input-group input-group--name">
+										<input
+											class="form-control form-input input is-large"
+											name="lastname"
+											placeholder="Фамилия"
+											type="text"
+										/>
+										<i class="fa__err"></i>
+										<span class="fa__errInfo"
+											>- Введите в указанном формате<br />
+											- Имя и фамилия не должны совпадать</span
+										>
+										<i class="fa__checked"></i>
+									</div>
+
+								
+                
+                  <div class="form-group input-group input-group--email">
+										<input
+											class="form-control input is-large"
+											name="email"
+											placeholder="E-mail"
+											type="email"
+										/>
+										<br>
+									</div>
+
+                  									<div class="form-group input-group input-group--email">
+<div class="form-group input-group input-group--email">
+										<input
+											class="form-control input is-large"
+											name="phone"
+											type="tel"
+										/>
+										<br>
+									</div>
+
+                  <br>
+
+									<div class="form-group">
+										<button
+											class="btn btn-block button lead-form__button is-outline buttonSend lead-form__button"
+											name="submitBtn"
+											type="submit"
+										>
+											<span> регистрация </span>
+										</button>
+									</div>
+								</form>
+							</div> -->
+						</div>
+					</div>
+				</section>
+
+				<section class="slider">
+					<h3
+						class="video__title"
+						style="text-align: center; margin-bottom: 140px"
+					>
+						Реальные истории успеха
+					</h3>
+					<div class="container">
+						<div class="slider__inner owl-carousel">
+							<div class="slider__box">
+								<h2 class="slider__box-title">Александр, 38 лет</h2>
+								<p class="slider__box-text">
+									10 лет назад вложил 500 000 рублей в золото – сегодня его
+									активы стоят 2 500 000 рублей!
+								</p>
+							</div>
+							<div class="slider__box">
+								<h2 class="slider__box-title">Ольга, 45 лет</h2>
+								<p class="slider__box-text">
+									начала инвестировать в слитки в 2015 году – её капитал вырос
+									на 120%!
+								</p>
+							</div>
+							<div class="slider__box">
+								<h2 class="slider__box-title">Иван, 29 лет</h2>
+								<p class="slider__box-text">
+									вложился в золотые ETF и за 5 лет удвоил свои инвестиции!
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="start">
+					<div class="container">
+						<div class="start__inner">
+							<div class="start__info">
+								<h2 class="start__title">
+									Акции и криптовалюты – это высокие риски и мошенничество
+								</h2>
+								<div
+									class="start__img"
+									style="
+										display: flex;
+										margin-top: 50px;
+										gap: 20px;
+										justify-content: center;
+									"
+								>
+									<img
+										src="images/IMG_8146.PNG"
+										alt="sd"
+										style="max-width: 200px"
+									/>
+									<img
+										src="images/IMG_8148.PNG"
+										alt="sd"
+										style="max-width: 200px"
+									/>
+								</div>
+							</div>
+							<div class="start__list">
+								<ul>
+									<li class="start__item">
+										Сегодня рынок переполнен сомнительными инвестициями. Акции
+										подвержены резким падениям и манипуляциям со стороны крупных
+										игроков, а криптовалюты стали излюбленным инструментом
+										мошенников, организующих скам-проекты. <br />
+										Миллионы людей теряют деньги из-за хайповых токенов и
+										финансовых пирамид. Не рискуйте своими сбережениями!
+										Выбирайте актив, который имеет реальную ценность и доказал
+										свою надёжность на протяжении веков – золото и драгоценные
+										металлы!
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main-link">
+					<img src="images/IMG_8150.png" alt="ds" />
+					<img src="images/IMG_8153.png" alt="ds" />
+					<div class="main-form__form">
+						<h3
+							class="video__title"
+							style="text-align: center; z-index: 9999; position: relative"
+						>
+							Оставить заявку
+						</h3>
+						<form
+							class="form _main-form register-form"
+							id="main-form"
+							method="post"
+							style="z-index: 9999; position: relative"
+							action="{form}"
+							aria-form-type="userData"
+							name="reg_form"
+						>
+							<div class="form-group input-group input-group--name">
+								<input
+									class="form-control form-input input is-large"
+									name="firstName"
+									id="first_name"
+									placeholder="Имя"
+									type="text"
+								/>
+							</div>
+							<div class="form-group input-group input-group--name">
+								<input
+									class="form-control form-input input is-large"
+									name="lastName"
+									id="last_name"
+									placeholder="Фамилия"
+									type="text"
+								/>
+							</div>
+
+							<div class="form-group input-group input-group--email">
+								<input
+									class="form-control input is-large"
+									name="email"
+									placeholder="E-mail"
+									type="email"
+									id="email"
+								/>
+								<br />
+							</div>
+
+							<div class="form-group input-group input-group--email">
+								<div class="form-group input-group input-group--email">
+									<input
+										class="form-control input is-large"
+										name="phone"
+										id="phone"
+										type="tel"
+									/>
+									<br />
+								</div>
+
+								<br />
+
+								<div class="form-group">
+									<button
+										class="btn btn-block button lead-form__button is-outline buttonSend lead-form__button submit_btn"
+										name="submitBtn"
+										type="submit"
+									>
+										<span> регистрация </span>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="container">
+					<img
+						src="images/IMG_8156.PNG"
+						alt="s"
+						style="max-width: 200px; display: block; margin: 0 auto 50px"
+					/>
+					<p class="footer__text">
+						Все права защищены.
+						<br /><br />
+						EUROPE GOLD INVEST 2025
+					</p>
+				</div>
+			</footer>
+		</div>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/css/intlTelInput.css"
+		/>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<!-- <script src="./js/main.js"></script> -->
+
+		<style>
+			.error {
+				background-color: rgba(255, 0, 0, 0.6) !important;
+				color: #fff;
+			}
+
+			.error::placeholder {
+				color: #fff !important;
+			}
+
+			.valid {
+				background-color: rgba(0, 255, 0, 0.6) !important;
+			}
+
+			.modal_phone {
+				opacity: 1;
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				z-index: 99999;
+				display: none;
+				outline: 0;
+				padding-right: 15px;
+				justify-content: center;
+				align-items: center;
+				background-color: rgba(0, 0, 0, 0.4);
+				overflow-x: hidden;
+				overflow-y: auto;
+				color: #000;
+			}
+
+			.modal_phone.open_phone {
+				display: flex;
+			}
+
+			.modal-open_phone {
+				overflow: hidden;
+			}
+
+			.modal-dialog_phone {
+				position: relative;
+				width: 100%;
+				max-width: 32rem;
+				padding: 1rem;
+				box-sizing: border-box;
+			}
+
+			.modal-content_phone {
+				display: flex;
+				flex-direction: column;
+				pointer-events: auto;
+				background-color: #fff;
+				background-clip: padding-box;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				border-radius: 0.3rem;
+				outline: 0;
+			}
+
+			.modal-header_phone {
+				display: flex;
+				align-items: center;
+				padding: 1rem 1rem;
+			}
+
+			.modal-header_phone {
+				justify-content: space-between;
+				border-top-left-radius: 0.3rem;
+				border-top-right-radius: 0.3rem;
+			}
+
+			.modal-body_phone {
+				position: relative;
+				flex: 1 1 auto;
+				padding: 1rem;
+			}
+
+			.modal-title_phone {
+				font-size: 1.25rem;
+				font-weight: 600;
+			}
+
+			.close-button_phone {
+				font-size: 1.5rem;
+				font-weight: 700;
+				line-height: 1;
+				opacity: 0.5;
+				background-color: transparent;
+				border: 0;
+				cursor: pointer;
+				padding: 1rem 1rem;
+				margin: -1rem -1rem -1rem auto;
+			}
+
+			@media (max-width: 500px) {
+				video {
+					width: 100% !important;
+				}
+			}
+		</style>
+	</body>
+</html>
