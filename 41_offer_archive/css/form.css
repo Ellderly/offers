@@ -6,9 +6,32 @@
 	font-size: 18px;
 	font-weight: 400;
 	margin: 10px auto 10px;
-	background: #3e4246;
-	border: 1px solid rgba(255, 255, 255, 0.15);
+	background: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 10px;
+	position: relative;
+}
+.register-form::before {
+	content: '';
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: -70px;
+	bottom: 0;
+	background-image: url('../images/IMG_8146.png');
+	background-position: center;
+	background-size: cover;
+}
+.register-form::after {
+	content: '';
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	right: -82px;
+	top: -50px;
+	background-image: url('../images/IMG_8153.png');
+	background-position: center;
+	background-size: cover;
 }
 
 .form-input-main {
@@ -23,10 +46,10 @@
 	padding-left: 10px;
 	background: transparent;
 	border-radius: 5px;
-	color: #ffffff;
+	color: #eac494;
 	font-weight: 400;
 	font-size: 18px;
-	border: 1px solid #ffffff;
+	border: 1px solid #eac494;
 }
 
 .form-input-main select {
@@ -42,17 +65,16 @@
 button[name='submitBtn'] {
 	width: 100%;
 	max-width: 240px;
-	background: #ffffff;
+	background: #eac494;
 	border-radius: 71px;
 	height: 50px;
 	text-align: center;
-	color: #ffffff;
 	font-family: 'IBM Plex Sans';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 100%;
-	color: #0c1570;
+	color: #fff;
 	border: none;
 	margin: 0 auto;
 	text-align: center;
