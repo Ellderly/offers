@@ -61,9 +61,9 @@
 	<body>
 		<div class="fixed-background"></div>
 		<div class="wrapper">
-			<div class="logo" style="margin: 30px auto">
+			<a href="#main-form" class="logo" style="margin: 30px auto">
 				<img src="images/IMG_8156.png" alt="s" style="max-width: 200px" />
-			</div>
+			</a>
 			<div class="header">
 				<div class="container">
 					<div class="header__info">
@@ -86,9 +86,20 @@
 					</div>
 					<div
 						class="header__img"
-						style="display: flex; justify-content: center"
+						style="
+							display: flex;
+							align-items: center;
+							flex-direction: column;
+							justify-content: center;
+						"
 					>
 						<img src="images/IMG_8155.png" alt="main-photo" />
+						<div
+							class="header__links"
+							style="transform: translateX(-10px); margin-top: 30px"
+						>
+							<a class="header__link white" href="#main-form">Приступить</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -349,7 +360,6 @@
 						</h3>
 						<form
 							class="form _main-form register-form"
-							id="main-form"
 							method="post"
 							action="{form}"
 							aria-form-type="userData"
@@ -408,6 +418,10 @@
 									</button>
 								</div>
 							</div>
+							<span style="font-size: 12px"
+								>Проект не доступен для граждан следующих стран: UA 🇺🇦 / CH 🇨🇳 /
+								IN 🇮🇳 / MD 🇲🇩 / PL 🇵🇱 / AU 🇦🇺</span
+							>
 						</form>
 					</div>
 				</section>
